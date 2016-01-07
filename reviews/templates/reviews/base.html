@@ -1,0 +1,24 @@
+{% load staticfiles %}
+<html>
+  <head>
+    <title>Ayn Rand Reviews Children’s Movies</title>
+    <link href="http://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">   
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="{% static 'css/reviews.css' %}">
+  </head>
+  <body>
+    <div class="page-header">
+      <a href=""><img src="/static/Ortberg-Ayn-Rand-Reviews-Childrens-Movies-1200.jpg" width="500px" height="340px"></a>
+      <h1><a href="/">Ayn Rand Review Children’s Movies</a></h1>
+    </div>
+    <div class="content">
+      <div class="row">
+	<div class="col-md-8">
+	  {% block content %}
+	  {% endblock %}
+	</div>
+      </div>
+    </div>
+  </body>
+</html>
